@@ -47,8 +47,6 @@ lightgbm>=3.3.0
 shap>=0.41.0
 joblib>=1.2.0
 
-text
-
 #### Installation Steps
 
 # Clone the repository
