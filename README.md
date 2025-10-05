@@ -17,13 +17,13 @@ The Habitable Worlds Prototype is a comprehensive machine learning platform desi
 ### Key Features
 
 #### AI-Powered Detection Engine
-- Ensemble machine learning with six algorithms (Random Forest, XGBoost, LightGBM, SVM, Gradient Boosting, Neural Networks)
+- Ensemble machine learning with algorithms (Random Forest, XGBoost, (classifiers))
 - Automated model selection and performance optimization
 - Real-time prediction with confidence intervals and uncertainty quantification
 - SHAP explainable AI for model interpretability
 
 #### Advanced Habitability Assessment
-- Enhanced Earth Similarity Index (ESI) calculation
+- Earth Similarity Index (ESI) calculation
 - Multi-factor analysis including radius, temperature, flux, and gravity similarity
 - Research priority scoring system
 - Habitable zone identification and analysis
@@ -62,9 +62,10 @@ pip install -r requirements.txt
 
 # Launch the application
 streamlit run ML.py
-Data Requirements
 
-Input Format
+### Data Requirements
+
+# Input Format
 
 The application requires CSV files with Kepler mission data containing the following mandatory columns:
 
@@ -87,26 +88,31 @@ Usage Instructions
 Use the sidebar to upload Kepler data CSV files
 Ensure required columns are present in the dataset
 The system will automatically process and validate the data
+
 2. Parameter Configuration
 
 Adjust orbital period, temperature, and radius filters
 Set Earth Similarity Index thresholds
 Configure gravity range and habitable zone preferences
+
 3. Model Training and Analysis
 
 The system automatically trains ensemble models when sufficient labeled data is available
 Monitor model performance metrics in the Research Dashboard
 Review feature importance and classification reports
+
 4. Candidate Exploration
 
 Examine top Earth similarity candidates in the Candidate Explorer
 Analyze ESI component breakdowns and gravity characteristics
 Review research priority scores and confidence intervals
+
 5. System Visualization
 
 Explore 3D representations of exoplanet systems
 Analyze relationships between planetary characteristics and habitability
 Compare multiple candidate systems
+
 6. Data Export
 
 Download full processed datasets
@@ -114,7 +120,7 @@ Export high-priority candidates for further research
 Save Earth-like and high similarity candidates
 Technical Architecture
 
-Data Processing Layer
+## Data Processing Layer
 
 CSV data ingestion and validation
 Feature engineering and transformation
@@ -134,7 +140,7 @@ Real-time filtering and parameter adjustment
 Export functionality
 Model Performance
 
-The ensemble AI system achieves:
+## The ensemble AI system achieves:
 
 ROC-AUC scores exceeding 0.95
 Precision and recall balanced for exoplanet detection
@@ -143,7 +149,7 @@ Confidence intervals for all predictions
 
 Contributing
 
-Team members should follow these guidelines:
+## Team members should follow these guidelines:
 
 Use descriptive commit messages
 Maintain code documentation
@@ -152,9 +158,9 @@ Follow PEP 8 coding standards for Python
 Update documentation for new features
 License
 
-This project is proprietary and developed for research purposes. All rights reserved.
+## This project is proprietary and developed for research purposes. All rights reserved.
 
-Acknowledgments
+## Acknowledgments
 
 NASA Exoplanet Archive for data sources
 Kepler Mission science team
