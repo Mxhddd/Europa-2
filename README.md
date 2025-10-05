@@ -47,23 +47,23 @@ lightgbm>=3.3.0
 shap>=0.41.0
 joblib>=1.2.0
 
-#### Installation Steps
+# Installation Steps
 
-# Clone the repository
+## Clone the repository
 git clone https://github.com/your-organization/habitable-worlds-prototype.git
 
-# Navigate to project directory
+## Navigate to project directory
 cd habitable-worlds-prototype
 
-# Install required packages
+## Install required packages
 pip install -r requirements.txt
 
-# Launch the application
+## Launch the application
 streamlit run ML.py
 
-### Data Requirements
+# Data Requirements
 
-# Input Format
+## Input Format
 
 The application requires CSV files with Kepler mission data containing the following mandatory columns:
 
